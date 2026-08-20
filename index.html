@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIN'S LAB</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==================== 공통 HEADER ====================
+[수정 위치]
+- 사이트 이름: MIN'S LAB
+- GitHub 주소: href의 YOUR_GITHUB_ID 부분
+- 메뉴/프로젝트 이름: 각 <a>의 글자를 수정
+============================================================ -->
+<header class="site-header">
+  <!-- 사이트 대표 이름 / 클릭하면 항상 홈페이지 -->
+  <a class="site-logo" href="index.html">MIN'S LAB</a>
+
+  <!-- 메인 메뉴 -->
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <!-- WEBSITE 하위 메뉴 -->
+      <li class="nav-item has-dropdown">
+        <a href="website/project1.html">WEBSITE</a>
+        <ul class="dropdown">
+          <li><a href="website/project1.html">프로젝트 1</a></li>
+          <li><a href="website/project2.html">프로젝트 2</a></li>
+          <li><a href="website/project3.html">프로젝트 3</a></li>
+        </ul>
+      </li>
+
+      <!-- GAME 하위 메뉴 -->
+      <li class="nav-item has-dropdown">
+        <a href="game/project1.html">GAME</a>
+        <ul class="dropdown">
+          <li><a href="game/project1.html">프로젝트 1</a></li>
+          <li><a href="game/project2.html">프로젝트 2</a></li>
+          <li><a href="game/project3.html">프로젝트 3</a></li>
+        </ul>
+      </li>
+
+      <!-- APPLICATION 하위 메뉴 -->
+      <li class="nav-item has-dropdown">
+        <a href="application/project1.html">APPLICATION</a>
+        <ul class="dropdown">
+          <li><a href="application/project1.html">프로젝트 1</a></li>
+          <li><a href="application/project2.html">프로젝트 2</a></li>
+          <li><a href="application/project3.html">프로젝트 3</a></li>
+        </ul>
+      </li>
+
+      <!-- HOBBY 하위 메뉴 -->
+      <li class="nav-item has-dropdown">
+        <a href="hobby/project1.html">HOBBY</a>
+        <ul class="dropdown">
+          <li><a href="hobby/project1.html">프로젝트 1</a></li>
+          <li><a href="hobby/project2.html">프로젝트 2</a></li>
+          <li><a href="hobby/project3.html">프로젝트 3</a></li>
+        </ul>
+      </li>
+
+      <!-- GITHUB: 하위 메뉴 없음 -->
+      <li class="nav-item">
+        <a href="https://github.com/YOUR_GITHUB_ID" target="_blank" rel="noopener noreferrer">GITHUB</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+  <!-- ==================== MAIN VISUAL ====================
+  [수정 위치]
+  - 메인 이미지: css/style.css의 .hero
+  - 제목/문구/버튼: 아래 내용
+  ========================================================= -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <p class="hero-label">MIN'S LAB</p>
+      <h1>My Projects · My Interests · My Life</h1>
+      <a class="button" href="#about">ABOUT ME</a>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ME ====================
+  [수정 위치]
+  - 프로필 이미지
+  - 짧은 자기소개
+  - 한 줄 소개
+  ========================================================= -->
+  <section id="about" class="section about-section">
+    <div class="section-inner about-grid">
+      <div class="image-placeholder">
+        <!-- 여기에 프로필 이미지 경로를 넣으세요 -->
+        PROFILE IMAGE
+      </div>
+      <div>
+        <p class="section-kicker">ABOUT ME</p>
+        <h2>ABOUT ME</h2>
+        <p>여기에 짧은 자기소개를 작성하세요.</p>
+        <p class="one-line-intro">나만의 프로젝트와 관심사를 기록하고 만들어가는 공간입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERESTS ====================
+  [수정 위치] 관심 분야 이름/아이콘
+  ========================================================= -->
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-kicker">INTERESTS</p>
+      <h2>INTERESTS</h2>
+      <div class="interest-grid">
+        <div class="interest-card"><span>01</span><strong>Coding</strong></div>
+        <div class="interest-card"><span>02</span><strong>Design</strong></div>
+        <div class="interest-card"><span>03</span><strong>Game</strong></div>
+        <div class="interest-card"><span>04</span><strong>Web</strong></div>
+        <div class="interest-card"><span>05</span><strong>Music</strong></div>
+        <div class="interest-card"><span>06</span><strong>Photography</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED PROJECTS ====================
+  [수정 위치]
+  - 대표 프로젝트 3개
+  - 이미지 / 이름 / 설명 / 링크
+  ========================================================= -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <p class="section-kicker">FEATURED PROJECTS</p>
+      <h2>FEATURED PROJECTS</h2>
+      <div class="project-grid">
+
+        <!-- PROJECT 01 -->
+        <article class="project-card">
+          <div class="project-image">PROJECT IMAGE</div>
+          <div class="project-content">
+            <span class="project-number">PROJECT 01</span>
+            <h3>대표 프로젝트 이름</h3>
+            <p>여기에 짧은 프로젝트 설명을 작성하세요.</p>
+            <a class="text-link" href="website/project1.html">자세히 보기 →</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 02 -->
+        <article class="project-card">
+          <div class="project-image">PROJECT IMAGE</div>
+          <div class="project-content">
+            <span class="project-number">PROJECT 02</span>
+            <h3>대표 프로젝트 이름</h3>
+            <p>여기에 짧은 프로젝트 설명을 작성하세요.</p>
+            <a class="text-link" href="game/project1.html">자세히 보기 →</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 03 -->
+        <article class="project-card">
+          <div class="project-image">PROJECT IMAGE</div>
+          <div class="project-content">
+            <span class="project-number">PROJECT 03</span>
+            <h3>대표 프로젝트 이름</h3>
+            <p>여기에 짧은 프로젝트 설명을 작성하세요.</p>
+            <a class="text-link" href="application/project1.html">자세히 보기 →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RECENT UPDATES ====================
+  [수정 위치] 날짜 + 최근 업데이트 내용
+  ========================================================= -->
+  <section class="section">
+    <div class="section-inner narrow">
+      <p class="section-kicker">RECENT UPDATES</p>
+      <h2>RECENT UPDATES</h2>
+      <div class="update-list">
+        <div><time>2026.08.20</time><span>새로운 프로젝트 추가</span></div>
+        <div><time>2026.08.18</time><span>취미 페이지 업데이트</span></div>
+        <div><time>2026.08.15</time><span>MIN'S LAB 홈페이지 제작 시작</span></div>
+      </div>
+      <!-- 나중에 업데이트 페이지를 만들면 href를 변경 -->
+      <a class="button button-light" href="#">MORE</a>
+    </div>
+  </section>
+
+  <!-- ==================== CURRENTLY ====================
+  [수정 위치] 현재 진행 중인 작업/관심사
+  ========================================================= -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <p class="section-kicker">CURRENTLY</p>
+      <h2>CURRENTLY</h2>
+      <div class="currently-list">
+        <p>새로운 웹 프로젝트 제작 중</p>
+        <p>Python 공부 중</p>
+        <p>새로운 디자인 작업 중</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 마지막 한마디 ==================== -->
+  <section class="closing-section">
+    <div class="section-inner">
+      <h2>Thanks for visiting my lab.</h2>
+      <p>계속해서 새로운 것을 만들고 있습니다.</p>
+    </div>
+  </section>
+</main>
+
+<!-- ==================== FOOTER ====================
+[수정 위치]
+- Email / Instagram / GitHub 주소
+- 저작권 연도
+===================================================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>MIN'S LAB</strong>
+      <p>My Projects · My Interests · My Life</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+      <a href="https://instagram.com/YOUR_INSTAGRAM_ID" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://github.com/YOUR_GITHUB_ID" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 MIN'S LAB</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
