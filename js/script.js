@@ -6,11 +6,11 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('.has-dropdown > a').forEach(link => {
-  link.addEventListener('click', e => {
-    if (window.innerWidth <= 800) {
-      e.preventDefault();
-      link.parentElement.classList.toggle('open');
-    }
+    link.addEventListener('click', e => {
+      if (window.innerWidth <= 800) {
+        e.preventDefault();
+        link.parentElement.classList.toggle('open');
+      }
+    });
   });
 });
-
