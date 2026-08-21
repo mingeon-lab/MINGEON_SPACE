@@ -1,14 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const items = document.querySelectorAll(".has-dropdown");
+/* ============================================================
+   MIN'S LAB JavaScript
+   현재 Hover 메뉴는 CSS만으로 작동합니다.
+   나중에 필요한 JavaScript 기능을 이 파일에 추가하세요.
+   ============================================================ */
 
-  items.forEach(item => {
-    const link = item.querySelector(".nav-link");
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdownItems = document.querySelectorAll(".has-dropdown");
+
+  dropdownItems.forEach(item => {
+    const link = item.querySelector(":scope > a");
 
     link.addEventListener("click", e => {
       e.preventDefault();
 
-      items.forEach(other => {
-        if (other !== item) other.classList.remove("open");
+      dropdownItems.forEach(other => {
+        if (other !== item) {
+          other.classList.remove("open");
+        }
       });
 
       item.classList.toggle("open");
@@ -17,7 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("click", e => {
     if (!e.target.closest(".has-dropdown")) {
-      items.forEach(item => item.classList.remove("open"));
+      dropdownItems.forEach(item => {
+        item.classList.remove("open");
+      });
     }
   });
 });
