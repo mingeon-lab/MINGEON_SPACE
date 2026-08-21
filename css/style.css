@@ -40,6 +40,13 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
+@media (max-width: 800px) {
+  .has-dropdown.open .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
 /* ==================== HEADER ==================== */
 
 .site-header {
