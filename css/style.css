@@ -113,11 +113,13 @@ a { color: inherit; text-decoration: none; }
   transition: opacity .15s ease, transform .15s ease, visibility .15s;
 }
 
-.has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+@media (min-width: 801px) {
+  .has-dropdown:hover .dropdown,
+  .has-dropdown:focus-within .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 
 .dropdown a {
