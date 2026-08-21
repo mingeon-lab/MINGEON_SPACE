@@ -479,33 +479,30 @@ a {
   }
 
   /* 모바일 드롭다운 */
-  .has-dropdown {
-    position: static;
-  }
+.has-dropdown {
+  position: relative;
+}
 
-  .has-dropdown .dropdown {
-    position: fixed;
-    top: auto;
-    left: 0;
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: 6px 20px;
-    transform: translateY(-4px);
-    z-index: 9999;
-  }
+.has-dropdown .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 180px;
+  margin: 0;
+  padding: 6px 0;
+  transform: translateY(-4px);
+  z-index: 9999;
+}
 
-  .has-dropdown.open .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    transform: translateY(0);
-  }
+.has-dropdown.open .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
-  .dropdown a {
-    padding: 12px 16px;
-  }
+.dropdown a {
+  padding: 12px 16px;
 }
 
 @media (max-width: 500px) {
