@@ -36,8 +36,6 @@ a {
   text-decoration: none;
 }
 
-/* ==================== HEADER ==================== */
-
 .site-header {
   background: #CCCCCC;
   border-bottom: 1px solid var(--line);
@@ -54,8 +52,6 @@ a {
   font-weight: 800;
   letter-spacing: -1px;
 }
-
-/* ==================== NAVIGATION ==================== */
 
 .main-nav {
   border-top: 1px solid #f0f0f0;
@@ -89,8 +85,6 @@ a {
   background: var(--soft-bg);
 }
 
-/* ==================== DROPDOWN ==================== */
-
 .dropdown {
   position: absolute;
   top: 100%;
@@ -118,6 +112,12 @@ a {
   }
 }
 
+.has-dropdown.open .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .dropdown a {
   display: block;
   padding: 10px 16px;
@@ -128,14 +128,6 @@ a {
 .dropdown a:hover {
   background: var(--soft-bg);
 }
-
-.has-dropdown.open .dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-/* ==================== COMMON SECTION ==================== */
 
 .section {
   padding: 90px 20px;
@@ -169,8 +161,6 @@ a {
   line-height: 1.2;
 }
 
-/* ==================== MAIN VISUAL ==================== */
-
 .hero {
   min-height: 620px;
   display: grid;
@@ -197,8 +187,6 @@ a {
   letter-spacing: -2px;
 }
 
-/* ==================== BUTTON ==================== */
-
 .button {
   display: inline-block;
   padding: 11px 22px;
@@ -219,8 +207,6 @@ a {
   color: var(--text);
   border-color: var(--line);
 }
-
-/* ==================== ABOUT ==================== */
 
 .about-grid {
   display: grid;
@@ -249,8 +235,6 @@ a {
   font-weight: 700;
 }
 
-/* ==================== INTERESTS ==================== */
-
 .interest-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -277,8 +261,6 @@ a {
 .interest-card strong {
   font-size: 18px;
 }
-
-/* ==================== FEATURED PROJECTS ==================== */
 
 .project-grid {
   display: grid;
@@ -328,8 +310,6 @@ a {
   text-decoration: underline;
 }
 
-/* ==================== RECENT UPDATES ==================== */
-
 .update-list {
   border-top: 1px solid var(--line);
 }
@@ -347,8 +327,6 @@ a {
   font-size: 13px;
 }
 
-/* ==================== CURRENTLY ==================== */
-
 .currently-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -361,8 +339,6 @@ a {
   background: #D8D8D8;
   border: 1px solid var(--line);
 }
-
-/* ==================== CLOSING ==================== */
 
 .closing-section {
   padding: 120px 20px;
@@ -379,8 +355,6 @@ a {
   color: var(--muted);
 }
 
-/* ==================== PROJECT PAGE ==================== */
-
 .project-page {
   min-height: 620px;
   padding: 90px 20px;
@@ -390,8 +364,6 @@ a {
   margin: 0;
   font-size: 44px;
 }
-
-/* ==================== FOOTER ==================== */
 
 .site-footer {
   padding: 45px 20px 20px;
@@ -441,8 +413,6 @@ a {
   font-size: 12px;
 }
 
-/* ==================== RESPONSIVE ==================== */
-
 @media (max-width: 800px) {
 
   .site-logo {
@@ -478,14 +448,13 @@ a {
     flex-direction: column;
   }
 
-  /* 모바일 드롭다운 */
   .has-dropdown {
     position: static;
   }
 
   .has-dropdown .dropdown {
     position: fixed;
-    top: auto;
+    top: 0;
     left: 0;
     width: 100%;
     min-width: 0;
@@ -496,10 +465,7 @@ a {
   }
 
   .has-dropdown.open .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    position: fixed;
     transform: translateY(0);
   }
 
