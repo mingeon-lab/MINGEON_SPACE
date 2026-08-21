@@ -1,7 +1,7 @@
 :root {
   --text: #222;
   --muted: #777;
-  --line: #e5e5e5;
+  --line: #CDCDCD;
   --bg: #fff;
   --soft-bg: #EFEFEF;
   --footer-bg: #333;
@@ -504,4 +504,34 @@ a {
   .footer-links {
     flex-wrap: wrap;
   }
+}
+
+.interest-card,
+.project-card,
+.currently-list p,
+.button {
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+
+.interest-card:hover,
+.project-card:hover,
+.currently-list p:hover {
+  transform: scale(1.05);
+  border: 1px solid #818181;
+  z-index: 10;
+}
+
+.interest-card,
+.project-card,
+.currently-list p,
+.button {
+  transition: transform 0.2s ease;
+}
+
+.interest-card:hover,
+.project-card:hover,
+.currently-list p:hover,
+.button:hover {
+  transform: scale(1.05);
 }
