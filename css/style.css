@@ -1,3 +1,14 @@
+/* ============================================================
+   MIN'S LAB - 공통 스타일
+   [수정하기 쉬운 구조]
+   1. 기본값
+   2. Header / Navigation
+   3. 홈페이지
+   4. 프로젝트 페이지
+   5. Footer
+   6. 반응형
+   ============================================================ */
+
 :root {
   --text: #222;
   --muted: #777;
@@ -9,13 +20,9 @@
   --max-width: 1180px;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -31,11 +38,15 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+a { color: inherit; text-decoration: none; }
 
+@media (max-width: 800px) {
+  .has-dropdown.open .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
 /* ==================== HEADER ==================== */
 
 .site-header {
@@ -45,6 +56,7 @@ a {
   z-index: 100;
 }
 
+/* 사이트 이름: 메뉴보다 크게 */
 .site-logo {
   display: block;
   width: var(--max-width);
@@ -57,11 +69,7 @@ a {
 
 /* ==================== NAVIGATION ==================== */
 
-.main-nav {
-  border-top: 1px solid #f0f0f0;
-  position: relative;
-  z-index: 200;
-}
+.main-nav { border-top: 1px solid #f0f0f0; }
 
 .nav-list {
   width: var(--max-width);
@@ -72,9 +80,7 @@ a {
   align-items: stretch;
 }
 
-.nav-item {
-  position: relative;
-}
+.nav-item { position: relative; }
 
 .nav-item > a {
   display: block;
@@ -85,11 +91,10 @@ a {
   white-space: nowrap;
 }
 
-.nav-item > a:hover {
-  background: var(--soft-bg);
-}
+.nav-item > a:hover { background: var(--soft-bg); }
 
 /* ==================== DROPDOWN ==================== */
+/* 평소에는 숨김 / Hover 또는 키보드 Focus 시 표시 */
 
 .dropdown {
   position: absolute;
@@ -106,7 +111,6 @@ a {
   visibility: hidden;
   transform: translateY(-4px);
   transition: opacity .15s ease, transform .15s ease, visibility .15s;
-  z-index: 300;
 }
 
 @media (min-width: 801px) {
@@ -125,10 +129,7 @@ a {
   white-space: nowrap;
 }
 
-.dropdown a:hover {
-  background: var(--soft-bg);
-}
-
+.dropdown a:hover { background: var(--soft-bg); }
 .has-dropdown.open .dropdown {
   opacity: 1;
   visibility: visible;
@@ -137,13 +138,8 @@ a {
 
 /* ==================== COMMON SECTION ==================== */
 
-.section {
-  padding: 90px 20px;
-}
-
-.section-alt {
-  background: var(--soft-bg);
-}
+.section { padding: 90px 20px; }
+.section-alt { background: var(--soft-bg); }
 
 .section-inner {
   width: 100%;
@@ -151,9 +147,7 @@ a {
   margin: 0 auto;
 }
 
-.section-inner.narrow {
-  max-width: 900px;
-}
+.section-inner.narrow { max-width: 900px; }
 
 .section-kicker {
   margin: 0 0 8px;
@@ -176,12 +170,19 @@ a {
   display: grid;
   place-items: center;
   text-align: center;
+
+  /* [수정 위치]
+  실제 배경 이미지를 넣으려면 아래 주석을 해제하고 경로 수정
+
+  background:
+    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+    url("../images/main.jpg") center/cover no-repeat;
+  */
+
   background: var(--soft-bg);
 }
 
-.hero-overlay {
-  padding: 40px 20px;
-}
+.hero-overlay { padding: 40px 20px; }
 
 .hero-label {
   margin: 0 0 8px;
@@ -209,9 +210,7 @@ a {
   font-weight: 700;
 }
 
-.button:hover {
-  opacity: .8;
-}
+.button:hover { opacity: .8; }
 
 .button-light {
   margin-top: 28px;
@@ -240,9 +239,7 @@ a {
   letter-spacing: 1px;
 }
 
-.about-section h2 {
-  margin-bottom: 22px;
-}
+.about-section h2 { margin-bottom: 22px; }
 
 .one-line-intro {
   margin-top: 24px;
@@ -274,9 +271,7 @@ a {
   font-size: 12px;
 }
 
-.interest-card strong {
-  font-size: 18px;
-}
+.interest-card strong { font-size: 18px; }
 
 /* ==================== FEATURED PROJECTS ==================== */
 
@@ -292,13 +287,9 @@ a {
   border: 1px solid var(--line);
 }
 
-.project-image {
-  min-height: 220px;
-}
+.project-image { min-height: 220px; }
 
-.project-content {
-  padding: 24px;
-}
+.project-content { padding: 24px; }
 
 .project-number {
   color: var(--muted);
@@ -324,15 +315,12 @@ a {
   font-weight: 700;
 }
 
-.text-link:hover {
-  text-decoration: underline;
-}
+.text-link:hover { text-decoration: underline; }
 
 /* ==================== RECENT UPDATES ==================== */
 
-.update-list {
-  border-top: 1px solid var(--line);
-}
+.update-list { border-top: 1px solid var(--line); }
+
 
 .update-list > div {
   display: grid;
@@ -408,9 +396,7 @@ a {
   gap: 30px;
 }
 
-.footer-inner strong {
-  font-size: 18px;
-}
+.footer-inner strong { font-size: 18px; }
 
 .footer-inner p {
   margin: 6px 0 0;
@@ -424,13 +410,8 @@ a {
   align-items: flex-start;
 }
 
-.footer-links a {
-  font-size: 13px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
+.footer-links a { font-size: 13px; }
+.footer-links a:hover { text-decoration: underline; }
 
 .copyright {
   max-width: var(--max-width);
@@ -444,7 +425,6 @@ a {
 /* ==================== RESPONSIVE ==================== */
 
 @media (max-width: 800px) {
-
   .site-logo {
     width: 100%;
     padding-left: 20px;
@@ -452,68 +432,25 @@ a {
 
   .nav-list {
     width: 100%;
-    padding: 0 10px;
     overflow-x: auto;
-    position: relative;
   }
 
-  .nav-item > a {
-    padding: 14px 15px;
-  }
+  .nav-item > a { padding: 14px 15px; }
 
   .about-grid,
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
+  .project-grid { grid-template-columns: 1fr; }
 
-  .interest-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .interest-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .currently-list {
-    grid-template-columns: 1fr;
-  }
+  .currently-list { grid-template-columns: 1fr; }
 
-  .footer-inner {
-    flex-direction: column;
-  }
-
-  .has-dropdown {
-    position: relative;
-  }
-
-  .has-dropdown .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 180px;
-    min-width: 180px;
-    margin: 0;
-    padding: 6px 0;
-    transform: translateY(-4px);
-    z-index: 9999;
-  }
-
-  .has-dropdown.open .dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .dropdown a {
-    padding: 12px 16px;
-  }
+  .footer-inner { flex-direction: column; }
 }
 
 @media (max-width: 500px) {
+  .site-logo { font-size: 28px; }
 
-  .site-logo {
-    font-size: 28px;
-  }
-
-  .hero {
-    min-height: 500px;
-  }
+  .hero { min-height: 500px; }
 
   .section,
   .project-page {
@@ -521,16 +458,12 @@ a {
     padding-bottom: 65px;
   }
 
-  .interest-grid {
-    grid-template-columns: 1fr;
-  }
+  .interest-grid { grid-template-columns: 1fr; }
 
   .update-list > div {
     grid-template-columns: 1fr;
     gap: 2px;
   }
 
-  .footer-links {
-    flex-wrap: wrap;
-  }
+  .footer-links { flex-wrap: wrap; }
 }
