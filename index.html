@@ -23,7 +23,7 @@
 ============================================================ -->
 <header class="site-header">
   <!-- 사이트 대표 이름 / 클릭하면 항상 홈페이지 -->
-  <a class="site-logo" href="index.html">MINGEON SPACE</a>
+  <div class="site-logo"><img src="images/site-logo.png" alt=""><a href="index.html">MINGEON <span>SPACE</span></a></div>
 
   <!-- 메인 메뉴 -->
   <nav class="main-nav">
@@ -68,6 +68,9 @@
         </ul>
       </li>
 
+      <!-- ARCHIVE -->
+      <li class="nav-item"><a href="archive.html">ARCHIVE</a></li>
+
       <!-- GITHUB: 하위 메뉴 없음 -->
       <li class="nav-item">
         <a href="https://github.com/mingeon-lab" target="_blank">GITHUB</a>
@@ -103,11 +106,12 @@
         <!-- 여기에 프로필 이미지 경로를 넣으세요 -->
         PROFILE IMAGE
       </div>
-      <div>
+      <div class="about-card">
         <p class="section-kicker">ABOUT ME</p>
         <h2>김민건</h2>
-        <p>해보고 싶었던 것들, 버킷리스트 등을 해보고 기록을 남기는</p>
+        <p>해보고 싶었던 것들, 버킷리스트 등을 직접 해보고 기록을 남깁니다.</p>
         <p class="one-line-intro">나만의 프로젝트와 관심사를 기록하고 만들어가는 공간입니다.</p>
+        <div class="about-tags"><span>PROJECT</span><span>HOBBY</span><span>EXPERIMENT</span></div>
       </div>
     </div>
   </section>
@@ -186,12 +190,12 @@
       <p class="section-kicker">RECENT UPDATES</p>
       <h2>최근 업데이트</h2>
       <div class="update-list">
-        <div><time>2026.??.??</time><span>준비중</span></div>
-        <div><time>2026.08.21</time><span>모바일 기능 추가 및 수정</span></div>
         <div><time>2026.08.20</time><span>MIN'S LAB 홈페이지 제작 시작</span></div>
+        <div><time>2026.08.21</time><span>모바일 기능 추가 및 수정</span></div>
+        <div><time>2026.08.22</time><span>아카이브 수정 및 버그 픽스</span></div>
       </div>
       <!-- 나중에 업데이트 페이지를 만들면 href를 변경 -->
-      <a class="button button-light" href="#">MORE</a>
+      <a class="button button-light" href="archive.html">더보기</a>
     </div>
   </section>
 
@@ -203,9 +207,9 @@
       <p class="section-kicker">CURRENTLY</p>
       <h2>현재 진행중</h2>
       <div class="currently-list">
-        <p>개인 홈페이지 제작 중</p>
-        <p>애플리케이션 기획중</p>
-        <p>게임 기획중</p>
+        <div class="currently-card"><span>01</span><strong>개인 홈페이지</strong><p>사이트 디자인과 기능을 다듬는 중</p></div>
+        <div class="currently-card"><span>02</span><strong>APPLICATION</strong><p>아이디어와 기능을 기획하는 중</p></div>
+        <div class="currently-card"><span>03</span><strong>GAME</strong><p>게임 기획과 제작을 준비하는 중</p></div>
       </div>
     </div>
   </section>
