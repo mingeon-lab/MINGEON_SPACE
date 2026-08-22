@@ -236,6 +236,7 @@ a {
   place-items: center;
   text-align: center;
   background: var(--soft-bg);
+  min-height: 500px;
 }
 
 .hero-overlay {
@@ -389,10 +390,6 @@ a {
 }
 
 .project-card {
-  background:
-    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
-    url("../images/main.jpg") center/cover no-repeat;
-
   border: 1px solid var(--line);
 
   transition: transform 0.2s ease;
@@ -705,10 +702,6 @@ a {
   .site-logo img {
     width: 34px;
     height: 34px;
-  }
-
-  .hero {
-    min-height: 500px;
   }
 
   .section,
