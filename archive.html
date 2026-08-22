@@ -9,18 +9,69 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-logo"><img src="images/site-logo.png" alt=""><a href="index.html">MINGEON SPACE</a></div>
+  <!-- 사이트 대표 이름 / 클릭하면 항상 홈페이지 -->
+  <div class="site-logo">
+  <img src="images/site-logo.png" alt="">
+  <a href="./index.html">MINGEON <span>SPACE</span></a>
+</div>
+
+  <div class="theme-button">
+  <button id="theme-toggle">흑백모드 <span id="theme-icon">🌙</span></button>
+</div>
+
   <nav class="main-nav">
     <ul class="nav-list">
-      <li class="nav-item has-dropdown"><a href="website/project1.html">WEBSITE</a><ul class="dropdown"><li><a href="website/project1.html">개인 홈페이지</a></li><li><a href="website/project2.html">프로젝트 2</a></li><li><a href="website/project3.html">프로젝트 3</a></li></ul></li>
-      <li class="nav-item has-dropdown"><a href="game/project1.html">GAME</a><ul class="dropdown"><li><a href="game/project1.html">프로젝트 1</a></li><li><a href="game/project2.html">프로젝트 2</a></li><li><a href="game/project3.html">프로젝트 3</a></li></ul></li>
-      <li class="nav-item has-dropdown"><a href="application/project1.html">APPLICATION</a><ul class="dropdown"><li><a href="application/project1.html">프로젝트 1</a></li><li><a href="application/project2.html">프로젝트 2</a></li><li><a href="application/project3.html">프로젝트 3</a></li></ul></li>
-      <li class="nav-item has-dropdown"><a href="hobby/project1.html">HOBBY</a><ul class="dropdown"><li><a href="hobby/project1.html">프로젝트 1</a></li><li><a href="hobby/project2.html">프로젝트 2</a></li><li><a href="hobby/project3.html">프로젝트 3</a></li></ul></li>
-      <li class="nav-item"><a href="archive.html" class="active">ARCHIVE</a></li>
-      <li class="nav-item"><a href="https://github.com/mingeon-lab" target="_blank">GITHUB</a></li>
+      <!-- WEBSITE 하위 메뉴 -->
+      <li class="nav-item has-dropdown">
+        <a href="website/project1.html">🌐 WEBSITE</a>
+        <ul class="dropdown">
+          <li><a href="website/project1.html">개인 홈페이지</a></li>
+          <li><a href="website/project2.html">프로젝트 2</a></li>
+          <li><a href="website/project3.html">프로젝트 3</a></li>
+        </ul>
+      </li>
+
+      <!-- GAME 하위 메뉴 -->
+      <li class="nav-item has-dropdown">
+        <a href="game/project1.html">🎮 GAME</a>
+        <ul class="dropdown">
+          <li><a href="game/project1.html">프로젝트 1</a></li>
+          <li><a href="game/project2.html">프로젝트 2</a></li>
+          <li><a href="game/project3.html">프로젝트 3</a></li>
+        </ul>
+      </li>
+
+      <!-- APPLICATION 하위 메뉴 -->
+      <li class="nav-item has-dropdown">
+        <a href="application/project1.html">📱 APPLICATION</a>
+        <ul class="dropdown">
+          <li><a href="application/project1.html">프로젝트 1</a></li>
+          <li><a href="application/project2.html">프로젝트 2</a></li>
+          <li><a href="application/project3.html">프로젝트 3</a></li>
+        </ul>
+      </li>
+
+      <!-- HOBBY 하위 메뉴 -->
+      <li class="nav-item has-dropdown">
+        <a href="hobby/project1.html">🎨 HOBBY</a>
+        <ul class="dropdown">
+          <li><a href="hobby/project1.html">프로젝트 1</a></li>
+          <li><a href="hobby/project2.html">프로젝트 2</a></li>
+          <li><a href="hobby/project3.html">프로젝트 3</a></li>
+        </ul>
+      </li>
+
+      <!-- ARCHIVE -->
+      <li class="nav-item"><a href="archive.html">💾 ARCHIVE</a></li>
+
+      <!-- GITHUB: 하위 메뉴 없음 -->
+      <li class="nav-item">
+        <a href="https://github.com/mingeon-lab" target="_blank"><img src="images/github.png" class="emoji-icon"> GITHUB</a>
+      </li>
     </ul>
   </nav>
 </header>
+
 
 <main>
   <section class="archive-hero">
@@ -42,10 +93,27 @@
   </section>
 </main>
 
+<!-- ==================== FOOTER ====================
+[수정 위치]
+- Email / Instagram / GitHub 주소
+- 저작권 연도
+===================================================== -->
 <footer class="site-footer">
-  <div class="footer-inner"><div><strong>MINGEON SPACE</strong><p>My Projects · My Interests · My Life</p></div><div class="footer-links"><a href="mailto:growstone0712@gmail.com">Email</a><a href="https://www.instagram.com/min._.0712/" target="_blank">Instagram</a><a href="https://github.com/mingeon-lab" target="_blank">GitHub</a></div></div>
-  <div class="copyright">© 2026 MINGEON SPACE</div>
+  <div class="footer-inner">
+    <div>
+      <strong>MINGEON SPACE</strong>
+      <p>My Projects · My Interests · My Life</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:growstone0712@gmail.com" target="_blank">✉ Email</a>
+      <a href="https://www.instagram.com/min._.0712/" target="_blank"><img src="images/instagram.png" class="emoji-icon"> Instagram</a>
+      <a href="https://github.com/mingeon-lab" target="_blank"><img src="images/github.png" class="emoji-icon"> GitHub</a>
+    </div>
+
+  </div>
+  <div class="copyright">© 2026.08.20 MINGEON SPACE</div>
 </footer>
+
 <script src="js/script.js"></script>
 </body>
 </html>

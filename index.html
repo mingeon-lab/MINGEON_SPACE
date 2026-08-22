@@ -9,7 +9,7 @@
   <meta name="msvalidate.01" content="3E3FB7DA75CA7D3BF7CBD9C067D8CA7C" />
   <meta name="description" content="민건의 실험실입니다. 다양한 프로젝트와 웹사이트, 게임, 애플리케이션, 취미 활동을 기록합니다.">
   <meta name="keywords" content="MINGEON SPACE, MINGEONSPACE, 민건의 실험실, MIN'S LAB, 민건, 프로젝트, 웹사이트, 게임, 애플리케이션">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <title>MINGEON SPACE</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,14 +23,20 @@
 ============================================================ -->
 <header class="site-header">
   <!-- 사이트 대표 이름 / 클릭하면 항상 홈페이지 -->
-  <div class="site-logo"><img src="images/site-logo.png" alt=""><a href="index.html">MINGEON <span>SPACE</span></a></div>
+  <div class="site-logo">
+  <img src="images/site-logo.png" alt="">
+  <a href="./index.html">MINGEON <span>SPACE</span></a>
+</div>
 
-  <!-- 메인 메뉴 -->
+  <div class="theme-button">
+  <button id="theme-toggle">흑백모드 <span id="theme-icon">🌙</span></button>
+</div>
+
   <nav class="main-nav">
     <ul class="nav-list">
       <!-- WEBSITE 하위 메뉴 -->
       <li class="nav-item has-dropdown">
-        <a href="website/project1.html">WEBSITE</a>
+        <a href="website/project1.html">🌐 WEBSITE</a>
         <ul class="dropdown">
           <li><a href="website/project1.html">개인 홈페이지</a></li>
           <li><a href="website/project2.html">프로젝트 2</a></li>
@@ -40,7 +46,7 @@
 
       <!-- GAME 하위 메뉴 -->
       <li class="nav-item has-dropdown">
-        <a href="game/project1.html">GAME</a>
+        <a href="game/project1.html">🎮 GAME</a>
         <ul class="dropdown">
           <li><a href="game/project1.html">프로젝트 1</a></li>
           <li><a href="game/project2.html">프로젝트 2</a></li>
@@ -50,7 +56,7 @@
 
       <!-- APPLICATION 하위 메뉴 -->
       <li class="nav-item has-dropdown">
-        <a href="application/project1.html">APPLICATION</a>
+        <a href="application/project1.html">📱 APPLICATION</a>
         <ul class="dropdown">
           <li><a href="application/project1.html">프로젝트 1</a></li>
           <li><a href="application/project2.html">프로젝트 2</a></li>
@@ -60,7 +66,7 @@
 
       <!-- HOBBY 하위 메뉴 -->
       <li class="nav-item has-dropdown">
-        <a href="hobby/project1.html">HOBBY</a>
+        <a href="hobby/project1.html">🎨 HOBBY</a>
         <ul class="dropdown">
           <li><a href="hobby/project1.html">프로젝트 1</a></li>
           <li><a href="hobby/project2.html">프로젝트 2</a></li>
@@ -69,11 +75,11 @@
       </li>
 
       <!-- ARCHIVE -->
-      <li class="nav-item"><a href="archive.html">ARCHIVE</a></li>
+      <li class="nav-item"><a href="archive.html">💾 ARCHIVE</a></li>
 
       <!-- GITHUB: 하위 메뉴 없음 -->
       <li class="nav-item">
-        <a href="https://github.com/mingeon-lab" target="_blank">GITHUB</a>
+        <a href="https://github.com/mingeon-lab" target="_blank"><img src="images/github.png" class="emoji-icon"> GITHUB</a>
       </li>
     </ul>
   </nav>
@@ -223,6 +229,27 @@
   </section>
 </main>
 
+  <!-- ==================== 홈페이지 현황 ==================== -->
+  <section class="stats-section">
+  <h2>홈페이지 현황</h2>
+
+  <div class="stats">
+    <div class="stat-item">
+      <strong>1</strong>
+      <span>PROJECTS</span>
+    </div>
+
+    <div class="stat-item">
+      <strong id="days-count">0</strong>
+      <span>DAYS</span>
+    </div>
+
+    <div class="stat-item">
+      <strong>12</strong>
+      <span>UPDATES</span>
+    </div>
+  </div>
+</section>
 <!-- ==================== FOOTER ====================
 [수정 위치]
 - Email / Instagram / GitHub 주소
@@ -235,9 +262,9 @@
       <p>My Projects · My Interests · My Life</p>
     </div>
     <div class="footer-links">
-      <a href="mailto:growstone0712@gmail.com" target="_blank">Email</a>
-      <a href="https://www.instagram.com/min._.0712/" target="_blank">Instagram</a>
-      <a href="https://github.com/mingeon-lab" target="_blank">GitHub</a>
+      <a href="mailto:growstone0712@gmail.com" target="_blank">✉ Email</a>
+      <a href="https://www.instagram.com/min._.0712/" target="_blank"><img src="images/instagram.png" class="emoji-icon"> Instagram</a>
+      <a href="https://github.com/mingeon-lab" target="_blank"><img src="images/github.png" class="emoji-icon"> GitHub</a>
     </div>
 
   </div>

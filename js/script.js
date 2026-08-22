@@ -58,3 +58,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
+
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  if (themeIcon) themeIcon.textContent = "☀️";
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    const dark = document.body.classList.contains("dark");
+
+    localStorage.setItem("theme", dark ? "dark" : "light");
+
+    if (themeIcon) {
+      themeIcon.textContent = dark ? "☀️" : "🌙";
+    }
+  });
+}
+
+const startDate = new Date("2026-08-20");
+const today = new Date();
+
+const days = Math.floor(
+  (today - startDate) / (1000 * 60 * 60 * 24)
+) + 1;
+
+const daysCount = document.getElementById("days-count");
+
+if (daysCount) {
+  daysCount.textContent = days;
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MINGEON SPACE | APPLICATION | 프로젝트 3</title>
+  <title>MIN'S LAB | APPLICATION | 프로젝트 3</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
@@ -11,20 +11,27 @@
 
 <!-- ==================== 공통 HEADER ====================
 [수정 위치]
-- 사이트 이름: MINGEON SPACE
+- 사이트 이름: MIN'S LAB
 - GitHub 주소: href의 YOUR_GITHUB_ID 부분
 - 메뉴/프로젝트 이름: 각 <a>의 글자를 수정
 ============================================================ -->
 <header class="site-header">
   <!-- 사이트 대표 이름 / 클릭하면 항상 홈페이지 -->
-  <div class="site-logo"><img src="../images/site-logo.png" alt=""><a href="../index.html">MINGEON SPACE</a></div>
+  <div class="site-logo">
+  <img src="../images/site-logo.png" alt="">
+  <a href="../index.html">MINGEON <span>SPACE</span></a>
+</div>
+
+  <div class="theme-button">
+  <button id="theme-toggle">흑백모드 <span id="theme-icon">🌙</span></button>
+</div>
 
   <!-- 메인 메뉴 -->
   <nav class="main-nav">
     <ul class="nav-list">
       <!-- WEBSITE 하위 메뉴 -->
       <li class="nav-item has-dropdown">
-        <a href="../website/project1.html">WEBSITE</a>
+        <a href="../website/project1.html">🌐 WEBSITE</a>
         <ul class="dropdown">
           <li><a href="../website/project1.html">개인 홈페이지</a></li>
           <li><a href="../website/project2.html">프로젝트 2</a></li>
@@ -34,7 +41,7 @@
 
       <!-- GAME 하위 메뉴 -->
       <li class="nav-item has-dropdown">
-        <a href="../game/project1.html">GAME</a>
+        <a href="../game/project1.html">🎮 GAME</a>
         <ul class="dropdown">
           <li><a href="../game/project1.html">프로젝트 1</a></li>
           <li><a href="../game/project2.html">프로젝트 2</a></li>
@@ -44,7 +51,7 @@
 
       <!-- APPLICATION 하위 메뉴 -->
       <li class="nav-item has-dropdown">
-        <a href="../application/project1.html" class="active">APPLICATION</a>
+        <a href="../application/project1.html" class="active">📱 APPLICATION</a>
         <ul class="dropdown">
           <li><a href="../application/project1.html">프로젝트 1</a></li>
           <li><a href="../application/project2.html">프로젝트 2</a></li>
@@ -54,7 +61,7 @@
 
       <!-- HOBBY 하위 메뉴 -->
       <li class="nav-item has-dropdown">
-        <a href="../hobby/project1.html">HOBBY</a>
+        <a href="../hobby/project1.html">🎨 HOBBY</a>
         <ul class="dropdown">
           <li><a href="../hobby/project1.html">프로젝트 1</a></li>
           <li><a href="../hobby/project2.html">프로젝트 2</a></li>
@@ -62,9 +69,12 @@
         </ul>
       </li>
 
+      <!-- ARCHIVE -->
+      <li class="nav-item"><a href="../archive.html">💾 ARCHIVE</a></li>
+
       <!-- GITHUB: 하위 메뉴 없음 -->
       <li class="nav-item">
-        <a href="https://github.com/mingeon-lab" target="_blank">GITHUB</a>
+        <a href="https://github.com/mingeon-lab" target="_blank"><img src="../images/github.png" class="emoji-icon"> GITHUB</a>
       </li>
     </ul>
   </nav>
@@ -96,14 +106,14 @@
       <p>My Projects · My Interests · My Life</p>
     </div>
     <div class="footer-links">
-      <a href="mailto:growstone0712@gmail.com" target="_blank">Email</a>
-      <a href="https://www.instagram.com/min._.0712/" target="_blank">Instagram</a>
-      <a href="https://github.com/mingeon-lab" target="_blank">GitHub</a>
+      <a href="mailto:growstone0712@gmail.com" target="_blank">✉ Email</a>
+      <a href="https://www.instagram.com/min._.0712/" target="_blank"><img src="../images/instagram.png" class="emoji-icon"> Instagram</a>
+      <a href="https://github.com/mingeon-lab" target="_blank"><img src="../images/github.png" class="emoji-icon"> GitHub</a>
     </div>
   </div>
   <div class="copyright">© 2026 MINGEON SPACE</div>
 </footer>
 
 <script src="../js/script.js"></script>
-</body>
+</body> 
 </html>
